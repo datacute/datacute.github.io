@@ -1,2 +1,6 @@
 highlighter: pygments
 markdown: redcarpet
+github: {
+    "project_title": "Datacute",
+    "project_tagline": "Accute Information Revelation Tools"
+}
