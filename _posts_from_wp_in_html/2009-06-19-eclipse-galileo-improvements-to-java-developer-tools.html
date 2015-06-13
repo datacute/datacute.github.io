@@ -1,0 +1,55 @@
+---
+layout: post
+title: Eclipse Galileo Improvements to Java Developer Tools
+date: 2009-06-19 00:23:52.000000000 +12:00
+categories:
+- Eclipse
+- Java
+tags:
+- Eclipse
+- Galileo
+- Java
+- JDT
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1832023'
+author:
+  login: spdenne
+  email: stephen@datacute.co.nz
+  display_name: Stephen Denne
+  first_name: ''
+  last_name: ''
+excerpt: !ruby/object:Hpricot::Doc
+  options: {}
+---
+<p>Here are some improvements to JDT Project in <a href="http://www.eclipse.org/galileo/">Galileo</a> that I personally find useful:</p>
+<ol>
+<li>Support for <code>{@inheritDoc}</code> in the javadoc popups.
+<ul>
+<li>This is encourages its use, which in turn encourages documenting <em>why</em> a method has been overridden, or what's so special about this particular implementation, without having to repeat the purpose of the method itself.</li>
+</ul>
+</li>
+<li>Warnings when a method overrides a synchronized method, but isn’t synchronized itself.
+<ul>
+<li>It’s hard enough as it is to ensure you get the intended multi-threaded behaviour. This change can help prevent an error that while not very common, can be very hard to spot.</li>
+</ul>
+</li>
+<li>When auto-reformatting an entire class, I can keep the line breaks that I’ve added.
+<ul>
+<li>This caters for where the formatting rules are too general, and are not aware that I’d find some things much clearer if split into multiple lines in very specific places.</li>
+</ul>
+</li>
+<li>Constructor completion has been made more useful, by offering more appropriate suggestions.
+<ul>
+<li>I also often save myself some typing by writing the right hand side of the assignment, then using a quick assist to assign the result to a new variable.</li>
+</ul>
+</li>
+<li>By holding down Ctrl, and hovering on a method, I can chose whether to jump to the declaration, or the implementation.
+<ul>
+<li>I still find this method of navigation difficult though, preferring to keep my hands on the keyboard, navigating to the method call, pressing Ctrl-T, and choosing which implementing or declaring class I wish to view. (That’s not a new feature.)</li>
+<li>What I’d like is a companion for F3’s mapping of “Go To Declaration” that with a single key press I can “Go To Implementation”. However I can’t find that command in the key binding preferences page.</li>
+</ul>
+</li>
+</ol>
