@@ -4,7 +4,6 @@ title: What is a good title for a first blog post?
 date: 2007-09-20 23:10
 author: spdenne
 comments: true
-categories: [Uncategorized]
 ---
 This is my first post. It was created automatically by WordPress, but I've edited it.
 
