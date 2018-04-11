@@ -1,4 +1,4 @@
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 excerpt_separator: "<!--more-->"
 paginate: 5
