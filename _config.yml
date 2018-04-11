@@ -1,5 +1,8 @@
 highlighter: pygments
 markdown: redcarpet
+excerpt_separator: "<!--more-->"
+paginate: 5
+paginate_path: "/page:num/"
 github: {
     "project_title": "Datacute",
     "project_tagline": "Acute Information Revelation Tools"

@@ -1,6 +1,7 @@
 ---
 layout: index
 ---
+{% capture include_to_markdownify %}
 ### Data + Acute
 The [Free On-Line Dictionary Of Computing](http://foldoc.org/) includes this comment about *data* (it appears in the entry for *[information](http://foldoc.org/information)*:
 >"People or computers can find patterns in data to perceive information, and information can be used to enhance knowledge. Since knowledge is prerequisite to wisdom, we always want more data and information. But, as modern societies verge on information overload, we especially need better ways to find patterns." © Denis Howe (@denishowe)
@@ -12,6 +13,35 @@ The portmanteau word *Datacute* has been chosen to represent my specialty: produ
 ### Contents
 There is currently nothing to read, download, or comment on at this site, apart from this growing list of posts, as I convert them from Wordpress:
 
-{% for post in site.posts %}
-[{{ post.title }}]({{ post.url }})
+{% for post in paginator.posts %}
+#### [{{ post.title }}]({{ post.url }})
+{{ post.excerpt }}
 {% endfor %}
+{% endcapture %}
+{{ include_to_markdownify | markdownify }}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
