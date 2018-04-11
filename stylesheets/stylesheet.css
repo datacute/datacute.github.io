@@ -513,6 +513,9 @@ a.button small {
   display: block;
   font-size: 11px;
 }
+header a {
+  color: #fff;
+}
 header a.button {
   position: absolute;
   top: 0;
