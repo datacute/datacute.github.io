@@ -3,8 +3,16 @@ markdown: kramdown
 excerpt_separator: "<!--more-->"
 paginate: 5
 paginate_path: "/page:num/"
-
+theme: jekyll-theme-architect
+title: Datacute
+description: Acute Information Revelation Tools
+show_downloads: false
+google_analytics: "UA-63994678-1"
 locale: "en"
 
 plugins:
   - jekyll-mentions
+
+github:
+  is_user_page: true
+  is_project_page: false

@@ -1,0 +1,47 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+table.boxes {
+    width: auto;
+    border-collapse: separate;
+    border-style: none;
+    border-spacing: 2px;
+    padding: 2px;
+}
+
+table.boxes table:not(.box) {
+    width: auto;
+    border-collapse: separate;
+    border-style: none;
+    border-spacing: 2px;
+    padding: 0;
+}
+
+table.boxes td,
+table.box td {
+    border-collapse: separate;
+    border-style: none;
+    //border-spacing: 2px;
+    padding: 0;
+}
+
+table.box {
+    width: auto;
+    border-collapse: separate;
+    border: 2px solid black;
+    border-spacing: 2px;
+    padding: 2px;
+    margin: 2px
+}
+
+div.box {
+    width: 10px;
+    height: 10px;
+    border-collapse: separate;
+    border: 2px solid black;
+    border-spacing: 2px;
+    padding: 2px;
+    margin: 2px;
+}

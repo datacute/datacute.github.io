@@ -18,9 +18,7 @@ standing for prime index. pi(x) is equal to the number of primes equal to or les
 
 By altering my representation slightly so that the number one is represented as a single box:
 
-<table border="1" cellspacing="0"><tbody>
-<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
-</tbody></table>
+<div class="box"></div>
 
 So that two is the first prime, so two is a box with the representation of one inside it (which is how I previously
 drew three).
@@ -57,16 +55,16 @@ Though boxes can be arranged in any way you like, in order to demonstrate the te
 these vertically, as otherwise by the end of the post I'll be running out of room. Web pages have a fixed width, but can
 be infinitely long:
 
-<table><tbody>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(6763)</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+<table class="boxes"><tbody>
+<tr><td><table class="box"><tbody><tr><td>pi(6763)</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 </tbody></table>
 
 There's an online calculator of pi(n) too [here](http://primes.utm.edu/nthprime/).
@@ -81,16 +79,16 @@ It reports that there are:
 
 So our boxes need to be:
 
-<table><tbody>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>871</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+<table class="boxes"><tbody>
+<tr><td><table class="box"><tbody><tr><td>871</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 </tbody></table>
 
 We repeat the process for each of these numbers, drawing a box for each prime factor, and writing pi(factor) in each
@@ -102,61 +100,57 @@ The prime factors of 871 are 67 x 13, so we need two boxes.
 
 1 has been defined as a box with nothing in it.
 
-<table><tbody>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+<table class="boxes"><tbody>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 6763 = 871st prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(67)</td></tr></tbody></table></td></tr>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(13)</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>pi(67)</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>pi(13)</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
 </tbody></table>
 
@@ -168,61 +162,57 @@ pi(2) we've previously seen  = 1
 
 So our boxes need to be:
 
-<table><tbody>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+<table class="boxes"><tbody>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 6763 = 871st prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;19&nbsp;</td></tr></tbody></table></td></tr>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;6&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>&nbsp;19&nbsp;</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;6&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+			<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
 </tbody></table>
 
@@ -232,637 +222,533 @@ We'll replace 1s as before.
 
 So we've got:
 
-<table><tbody>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+<table class="boxes"><tbody>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 6763 = 871st prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 67 = 19th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(19)</td></tr></tbody></table></td></tr>
+					<tr><td><table class="box"><tbody><tr><td>pi(19)</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 13 = 6th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+					<tr><td><table class="box"><tbody><tr><td>pi(3)</td></tr></tbody></table></td></tr>
+					<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
 </tbody></table>
 
 Evaluating the pi functions gives:
 
-<table><tbody>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+<table class="boxes"><tbody>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 6763 = 871st prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 67 = 19th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;8&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+					<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;8&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 13 = 6th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+					<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;2&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+					<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
 </tbody></table>
 
 Factorising gives:
 
-<table><tbody>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+<table class="boxes"><tbody>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 6763 = 871st prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 67 = 19th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 19 = 8th prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+							<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+							<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+							<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 13 = 6th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
+							<tr><td><table class="box"><tbody><tr><td>pi(2)</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td></tr>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 2 = 1st prime-->
-						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-						</tbody></table>
+						<div class="box"></div>
 					</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
 </tbody></table>
 
 Evaluating the pi functions gives:
 
-<table><tbody>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+<table class="boxes"><tbody>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 6763 = 871st prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 67 = 19th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 19 = 8th prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+							<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+							<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+							<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 13 = 6th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+							<tr><td><table class="box"><tbody><tr><td>&nbsp;&nbsp;1&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td></tr>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 2 = 1st prime-->
-						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-						</tbody></table>
+						<div class="box"></div>
 					</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
 </tbody></table>
 
 Replacing the last 1s with their representation of an empty box gives the final representation:
 
-<table><tbody>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+<table class="boxes"><tbody>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 6763 = 871st prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 67 = 19th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 19 = 8th prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 13 = 6th prime -->
 				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td></tr>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+					<tr><td><table class="box"><tbody><tr><td>
 						<!-- 2 = 1st prime-->
-						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-						</tbody></table>
+						<div class="box"></div>
 					</td></tr></tbody></table></td></tr>
 				</tbody></table>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 3 = 2nd prime -->
 		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+			<tr><td><table class="box"><tbody><tr><td>
 				<!-- 2 = 1st prime-->
-				<table><tbody>
-					<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				</tbody></table>
+				<div class="box"></div>
 			</td></tr></tbody></table></td></tr>
 		</tbody></table>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
-	<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+	<tr><td><table class="box"><tbody><tr><td>
 		<!-- 2 = 1st prime-->
-		<table><tbody>
-			<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-		</tbody></table>
+		<div class="box"></div>
 	</td></tr></tbody></table></td></tr>
 </tbody></table>
 
 Rearranging this into a pleasing arrangement gives
 
-<table><tbody>
+<table class="boxes"><tbody>
 	<tr>
-		<td><table border="1" cellspacing="0"><tbody><tr><td>
+		<td><table class="box"><tbody><tr><td>
 			<!-- 6763 = 871st prime -->
 			<table><tbody>
 				<tr>
-					<td><table border="1" cellspacing="0"><tbody><tr><td>
+					<td><table class="box"><tbody><tr><td>
 						<!-- 67 = 19th prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 19 = 8th prime -->
 								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+									<tr><td><table class="box"><tbody><tr><td>
 										<!-- 2 = 1st prime-->
-										<table><tbody>
-											<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-										</tbody></table>
+										<div class="box"></div>
 									</td></tr></tbody></table></td></tr>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+									<tr><td><table class="box"><tbody><tr><td>
 										<!-- 2 = 1st prime-->
-										<table><tbody>
-											<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-										</tbody></table>
+										<div class="box"></div>
 									</td></tr></tbody></table></td></tr>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+									<tr><td><table class="box"><tbody><tr><td>
 										<!-- 2 = 1st prime-->
-										<table><tbody>
-											<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-										</tbody></table>
+										<div class="box"></div>
 									</td></tr></tbody></table></td></tr>
 								</tbody></table>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td>
-					<td><table border="1" cellspacing="0"><tbody><tr><td align="center">
+					<td><table class="box"><tbody><tr><td align="center">
 						<!-- 13 = 6th prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 3 = 2nd prime -->
 								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+									<tr><td><table class="box"><tbody><tr><td>
 										<!-- 2 = 1st prime-->
-										<table><tbody>
-											<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-										</tbody></table>
+										<div class="box"></div>
 									</td></tr></tbody></table></td></tr>
 								</tbody></table>
 							</td></tr></tbody></table></td></tr>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+							<tr><td><div class="box"></div></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td>
 				</tr>
@@ -871,73 +757,61 @@ Rearranging this into a pleasing arrangement gives
 		<td>
 			<table><tbody>
 				<tr>
-					<td><table border="1" cellspacing="0"><tbody><tr><td>
+					<td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td>
-					<td><table border="1" cellspacing="0"><tbody><tr><td>
+					<td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td>
 				</tr>
 				<tr>
-					<td><table border="1" cellspacing="0"><tbody><tr><td>
+					<td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td>
-					<td><table border="1" cellspacing="0"><tbody><tr><td>
+					<td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td>
 				</tr>
 				<tr>
-					<td><table border="1" cellspacing="0"><tbody><tr><td>
+					<td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td>
-					<td><table border="1" cellspacing="0"><tbody><tr><td>
+					<td><table class="box"><tbody><tr><td>
 						<!-- 3 = 2nd prime -->
 						<table><tbody>
-							<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+							<tr><td><table class="box"><tbody><tr><td>
 								<!-- 2 = 1st prime-->
-								<table><tbody>
-									<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-								</tbody></table>
+								<div class="box"></div>
 							</td></tr></tbody></table></td></tr>
 						</tbody></table>
 					</td></tr></tbody></table></td>
@@ -946,20 +820,16 @@ Rearranging this into a pleasing arrangement gives
 		</td>
 		<td>
 			<table><tbody>
-				<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-				<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+				<tr><td><div class="box"></div></td></tr>
+				<tr><td><table class="box"><tbody><tr><td>
 					<!-- 2 = 1st prime-->
-					<table><tbody>
-						<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-					</tbody></table>
+					<div class="box"></div>
 				</td></tr></tbody></table></td></tr>
-				<tr><td><table border="1" cellspacing="0"><tbody><tr><td>
+				<tr><td><table class="box"><tbody><tr><td>
 					<!-- 2 = 1st prime-->
-					<table><tbody>
-						<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
-					</tbody></table>
+					<div class="box"></div>
 				</td></tr></tbody></table></td></tr>
-				<tr><td><table border="1" cellspacing="0"><tbody><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr></tbody></table></td></tr>
+				<tr><td><div class="box"></div></td></tr>
 			</tbody></table>
 		</td>
 	</tr>
